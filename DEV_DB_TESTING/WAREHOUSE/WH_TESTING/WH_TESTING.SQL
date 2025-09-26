@@ -1,0 +1,6 @@
+CREATE OR ALTER WAREHOUSE WH_TESTING
+WITH
+    WAREHOUSE_SIZE = 'X-Small'
+    AUTO_SUSPEND = 500
+    AUTO_RESUME = TRUE
+    COMMENT = 'testing to create the  Warehouse';
