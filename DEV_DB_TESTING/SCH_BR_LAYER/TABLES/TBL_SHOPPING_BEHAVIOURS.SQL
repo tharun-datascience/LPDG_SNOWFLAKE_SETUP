@@ -1,8 +1,23 @@
-CREATE OR REPLACE TABLE DEV_DB_TESTING.SCH_BR_LAYER.TBL_SHOPPING_BEHAVIOURS(
-Customer_ID INT,Age INT,Gender VARCHAR(20),Item_Purchased VARCHAR(20),Category VARCHAR(30),Purchase_Amount_USD INT,Location VARCHAR(30),Size VARCHAR(30),Color VARCHAR(30),Season VARCHAR(30),Review_Rating FLOAT,Subscription_Status VARCHAR(10),
-Shipping_Type VARCHAR(30),Discount_Applied VARCHAR(30),Promo_Code_Used VARCHAR(30),Previous_Purchases INT,Payment_Method VARCHAR(30),Frequency_of_Purchases VARCHAR(40))
-;
-
+CREATE OR REPLACE TABLE DEV_DB_TESTING.SCH_BR_LAYER.tbl_shopping_behaviors (
+    customer_id             INT             COMMENT 'Unique identifier for each customer',
+    age                     INT             COMMENT 'Age of the customer',
+    gender                  VARCHAR(20)     COMMENT 'Gender of the customer',
+    item_purchased          VARCHAR(50)     COMMENT 'Name of the item purchased',
+    category                VARCHAR(30)     COMMENT 'Category of the item',
+    purchase_amount_usd     DECIMAL(10,2)   COMMENT 'Amount spent in USD',
+    location                VARCHAR(50)     COMMENT 'Customer location',
+    size                    VARCHAR(10)     COMMENT 'Size of the item purchased',
+    color                   VARCHAR(30)     COMMENT 'Color of the item',
+    season                  VARCHAR(20)     COMMENT 'Season during which the item was purchased',
+    review_rating           DECIMAL(2,1)    COMMENT 'Customer review rating',
+    subscription_status     BOOLEAN         COMMENT 'Whether the customer has a subscription',
+    shipping_type           VARCHAR(30)     COMMENT 'Type of shipping selected',
+    discount_applied        BOOLEAN         COMMENT 'Whether a discount was applied',
+    promo_code_used         BOOLEAN         COMMENT 'Whether a promo code was used',
+    previous_purchases      INT             COMMENT 'Number of previous purchases by the customer',
+    payment_method          VARCHAR(30)     COMMENT 'Payment method used',
+    frequency_of_purchases  VARCHAR(30)     COMMENT 'How often the customer makes purchases'
+);
 
 --INSERTING THE DATA 
 INSERT INTO DEV_DB_TESTING.SCH_BR_LAYER.TBL_SHOPPING_BEHAVIOURS VALUES(
