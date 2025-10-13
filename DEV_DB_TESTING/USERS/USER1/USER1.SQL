@@ -1,0 +1,10 @@
+CREATE OR REPLACE USER THARUN
+PASSWORD = 'ABC@123'
+DEFAULT_ROLE = PUBLIC
+MUST_CHANGE_PASSWORD = FALSE
+COMMENT = 'Data Engineer and analyst in DEV environment';
+
+--Granting the FN role privileges to the user
+
+GRANT ROLE SNOWFLAKE_DATA_TESTER_ENGINEER TO USER THARUN;
+

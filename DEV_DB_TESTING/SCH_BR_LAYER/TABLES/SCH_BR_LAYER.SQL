@@ -1,0 +1,2 @@
+--schema for the bronze layer
+CREATE OR REPLACE SCHEMA DEV_DB_TESTING.SCH_BR_LAYER;

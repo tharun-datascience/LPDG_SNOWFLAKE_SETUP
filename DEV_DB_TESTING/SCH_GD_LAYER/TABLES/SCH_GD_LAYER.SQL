@@ -1,0 +1,1 @@
+CREATE OR REPLACE SCHEMA DEV_DB_TESTING.SCH_GD_LAYER COMMENT = 'schema that consists Analytical data';

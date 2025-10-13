@@ -1,0 +1,6 @@
+--TABLE CONSISTS THE CLEANED TEST DATA
+CREATE OR REPLACE TABLE DEV_DB_TESTING.SCH_SI_LAYER.TBL_TEST21
+(
+    TEST21_ID INT,--contains the cleaned id records
+    TEST21_NAME VARCHAR(20)--contains the cleaned name records
+);

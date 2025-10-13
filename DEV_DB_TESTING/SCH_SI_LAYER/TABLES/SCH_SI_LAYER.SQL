@@ -1,0 +1,2 @@
+--Schema for the silver layer
+CREATE OR REPLACE SCHEMA DEV_DB_TESTING.SCH_SI_LAYER;
